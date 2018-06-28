@@ -20,8 +20,6 @@
 		AB9715D3177A184600C08469 /* DisplayMergeNub in Resources */ = {isa = PBXBuildFile; fileRef = AB9715D2177A184600C08469 /* DisplayMergeNub */; };
 		ABA0F448177D9D6600116CFE /* DisplayMergeNub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABA0F42B177D9C9700116CFE /* DisplayMergeNub.cpp */; };
 		ABA0F449177D9D8500116CFE /* DisplayMergeNub.h in Headers */ = {isa = PBXBuildFile; fileRef = ABA0F42E177D9C9700116CFE /* DisplayMergeNub.h */; };
-		ABC3F51A177779520030D260 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC3F519177779520030D260 /* Foundation.framework */; };
-		ABC3F51D177779570030D260 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC3F51C177779570030D260 /* AppKit.framework */; };
 		ABF4E5FE177796D80082C3E4 /* FixEDID.icns in Resources */ = {isa = PBXBuildFile; fileRef = ABF4E5FD177796D80082C3E4 /* FixEDID.icns */; };
 /* End PBXBuildFile section */
 
@@ -72,9 +70,7 @@
 		AB3A888218BAA65D002BC610 /* Vers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Vers.c; path = ../../Intermediates/FixEDID.build/Release/FixEDID.build/DerivedSources/Vers.c; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5A20F91777778900EEE2BB /* FixEDID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FixEDID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5A20FD1777778900EEE2BB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		AB5A21001777778900EEE2BB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AB5A21011777778900EEE2BB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		AB5A21021777778900EEE2BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB5A21051777778900EEE2BB /* FixEDID-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FixEDID-Info.plist"; sourceTree = "<group>"; };
 		AB5A21071777778900EEE2BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB5A21091777778900EEE2BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,9 +84,9 @@
 		ABA0F42E177D9C9700116CFE /* DisplayMergeNub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DisplayMergeNub.h; path = Headers/DisplayMergeNub.h; sourceTree = "<group>"; };
 		ABA0F439177D9D1F00116CFE /* DisplayMergeNub.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisplayMergeNub.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA0F43A177D9D1F00116CFE /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
-		ABC3F519177779520030D260 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		ABC3F51C177779570030D260 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.5.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		ABF4E5FD177796D80082C3E4 /* FixEDID.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = FixEDID.icns; sourceTree = "<group>"; };
+		D86730A120E5135000B18E06 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D86730A220E5136700B18E06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC3F51D177779570030D260 /* AppKit.framework in Frameworks */,
-				ABC3F51A177779520030D260 /* Foundation.framework in Frameworks */,
 				AB5A20FE1777778900EEE2BB /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +146,8 @@
 		AB5A20FC1777778900EEE2BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ABC3F519177779520030D260 /* Foundation.framework */,
-				ABC3F51C177779570030D260 /* AppKit.framework */,
+				D86730A120E5135000B18E06 /* AppKit.framework */,
+				D86730A220E5136700B18E06 /* Foundation.framework */,
 				AB5A20FD1777778900EEE2BB /* Cocoa.framework */,
 				AB5A20FF1777778900EEE2BB /* Other Frameworks */,
 			);
@@ -163,9 +157,7 @@
 		AB5A20FF1777778900EEE2BB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB5A21001777778900EEE2BB /* AppKit.framework */,
 				AB5A21011777778900EEE2BB /* CoreData.framework */,
-				AB5A21021777778900EEE2BB /* Foundation.framework */,
 				ABA0F43A177D9D1F00116CFE /* Kernel.framework */,
 			);
 			name = "Other Frameworks";

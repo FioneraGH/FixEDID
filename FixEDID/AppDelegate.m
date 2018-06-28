@@ -482,8 +482,11 @@ int LEDDevice = 37430;
 
     if (EDIDFileOpened == NO)
     {
-        NSRunAlertPanel(@"Couldn't run!", @"Open an EDID file first!", @"OK", nil, nil);
-
+        NSAlert *alert = [[NSAlert alloc] init];
+        alert.messageText = @"Open EDID file failed!";
+        alert.informativeText = [NSString stringWithFormat:@"%@", @"Open an EDID file first!"];
+        [alert runModal];
+        
         return;
     }
 
@@ -1880,7 +1883,10 @@ int LEDDevice = 37430;
 
         if (!file)
         {
-            NSRunAlertPanel(@"Open EDID file failed!", @"Open failed!", @"OK", nil, nil);
+            NSAlert *alert = [[NSAlert alloc] init];
+            alert.messageText = @"Open EDID file failed!";
+            alert.informativeText = [NSString stringWithFormat:@"%@", @"Open failed!"];
+            [alert runModal];
             
             EDIDFileOpened = NO;
             [EDIDPath setStringValue:@""];
@@ -1893,8 +1899,11 @@ int LEDDevice = 37430;
 
         if (EDIDSize == 0)
         {
-            NSRunAlertPanel(@"Open EDID file failed!", @"File is empty!", @"OK", nil, nil);
-
+            NSAlert *alert = [[NSAlert alloc] init];
+            alert.messageText = @"Open EDID file failed!";
+            alert.informativeText = [NSString stringWithFormat:@"%@", @"File is empty!"];
+            [alert runModal];
+            
             EDIDFileOpened = NO;
             [EDIDPath setStringValue:@"Open an EDID file"];
 
@@ -1907,7 +1916,10 @@ int LEDDevice = 37430;
 
         if (!EDIDRawData)
         {
-            NSRunAlertPanel(@"Open EDID file failed!", @"Memory allocation error!", @"OK", nil, nil);
+            NSAlert *alert = [[NSAlert alloc] init];
+            alert.messageText = @"Open EDID file failed!";
+            alert.informativeText = [NSString stringWithFormat:@"%@", @"Memory allocation error!"];
+            [alert runModal];
             
             EDIDFileOpened = NO;
             [EDIDPath setStringValue:@"Open an EDID file"];
@@ -1921,7 +1933,10 @@ int LEDDevice = 37430;
 
         if (memcmp(EDIDStructure->Header, EDID_Header, sizeof(EDID_Header)))
         {
-            NSRunAlertPanel(@"Open EDID file failed!", @"EDID header is incorrect!", @"OK", nil, nil);
+            NSAlert *alert = [[NSAlert alloc] init];
+            alert.messageText = @"Open EDID file failed!";
+            alert.informativeText = [NSString stringWithFormat:@"%@", @"EDID header is incorrect!"];
+            [alert runModal];
 
             EDIDFileOpened = NO;
             [EDIDPath setStringValue:@"Open an EDID file"];
