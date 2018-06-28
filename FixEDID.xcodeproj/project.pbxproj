@@ -291,12 +291,15 @@
 				ORGANIZATIONNAME = "Andy Vandijck";
 				TargetAttributes = {
 					AB5A20F81777778900EEE2BB = {
-						DevelopmentTeam = GSF3NR4NQ5;
+						DevelopmentTeam = STX582DZ5E;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
 						};
+					};
+					ABA0F438177D9D1F00116CFE = {
+						DevelopmentTeam = STX582DZ5E;
 					};
 				};
 			};
@@ -406,6 +409,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 2.0;
+				DEVELOPMENT_TEAM = STX582DZ5E;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 2.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -462,6 +466,7 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 2.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = STX582DZ5E;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 2.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
